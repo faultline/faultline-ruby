@@ -1,4 +1,4 @@
-# faultline-ruby
+# faultline-ruby [![Build Status](https://travis-ci.org/faultline/faultline-ruby.svg?branch=master)](https://travis-ci.org/faultline/faultline-ruby)
 
 > [faultline](https://github.com/faultline/faultline) exception and error notifier for Ruby.
 

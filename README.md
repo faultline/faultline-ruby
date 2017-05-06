@@ -79,7 +79,7 @@ puts "\nAnother ZeroDivisionError was sent to Faultline, but this time synchrono
 
 ## References
 
-- [airbrake/airbrake-ruby](https://github.com/airbrake/airbrake-ruby)
+- faultline-ruby is based on [airbrake/airbrake-ruby](https://github.com/airbrake/airbrake-ruby)
     - Airbrake Ruby is licensed under [The MIT License (MIT)](https://github.com/airbrake/airbrake-ruby/LICENSE.md).
 
 ## License

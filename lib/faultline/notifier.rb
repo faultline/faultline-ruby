@@ -11,8 +11,6 @@ module Faultline
 
       @filter_chain = Airbrake::FilterChain.new(@config)
 
-      add_filters_for_config_keys
-
       @async_sender = AsyncSender.new(@config)
       @sync_sender = SyncSender.new(@config)
     end

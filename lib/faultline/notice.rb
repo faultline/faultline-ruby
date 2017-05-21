@@ -24,10 +24,9 @@ module Faultline
         notifications: @config.notifications
       }
       @stash = {}
+      @truncator = Airbrake::Truncator.new(PAYLOAD_MAX_SIZE)
 
       extract_custom_attributes(exception)
-
-      @truncator = Airbrake::PayloadTruncator.new(PAYLOAD_MAX_SIZE, @config.logger)
     end
 
     def context

@@ -9,7 +9,8 @@ module Faultline
         raise Airbrake::Error, @config.validation_error_message
       end
 
-      @filter_chain = Airbrake::FilterChain.new(@config)
+      @filter_chain = Airbrake::FilterChain.new
+      add_default_filters
 
       @async_sender = AsyncSender.new(@config)
       @sync_sender = SyncSender.new(@config)
